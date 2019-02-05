@@ -1,0 +1,16 @@
+footer {
+  background: #16222a; /* fallback for old browsers */
+  background: linear-gradient(
+    to right,
+    #3a6073,
+    #16222a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  * {
+    color: white;
+  }
+}

@@ -1,0 +1,40 @@
+.btn {
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 15px 35px;
+  &.btn-primary {
+    color: white;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(
+      to right,
+      rgba(68, 88, 220, 1) 0%,
+      rgba(132, 79, 238, 1) 100%
+    );
+    border: 3px solid transparent;
+    transition: 0.4s;
+    &:hover {
+      color: $primary-color;
+      box-shadow: none;
+      border: 3px solid $primary-color;
+      background: white;
+    }
+  }
+  &.btn-secondary {
+    color: $primary-color;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.5);
+    background: white;
+    border: 3px solid $primary-color;
+    transition: 0.4s;
+    &:hover {
+      color: white;
+      box-shadow: none;
+      border: 3px solid $primary-color;
+      background: linear-gradient(
+        to right,
+        rgba(68, 88, 220, 1) 0%,
+        rgba(132, 79, 238, 1) 100%
+      );
+    }
+  }
+}

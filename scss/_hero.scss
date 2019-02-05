@@ -1,0 +1,39 @@
+.hero_banner {
+  color: $title-color;
+  .hero_banner_container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    * {
+      line-height: 170%;
+      font-weight: 400;
+    }
+    .hero_banner__content {
+      display: flex;
+      flex-basis: 50%;
+      flex-direction: column;
+      justify-content: center;
+      .btns-wrapper {
+        margin-top: 20px;
+      }
+      h1 {
+        span {
+          font-weight: 900;
+        }
+      }
+      h3 {
+        font-weight: 900;
+      }
+    }
+    .hero_banner__img {
+      flex-basis: 50%;
+      text-align: right;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
