@@ -1,5 +1,5 @@
 let canvas = document.querySelector("canvas");
-let section = document.getElementById("test");
+let section = document.getElementById("main");
 
 // canvas.width = window.innerWidth;
 // canvas.height = window.innerHeight / 2;

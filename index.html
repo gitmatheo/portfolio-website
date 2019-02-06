@@ -55,15 +55,17 @@
         <div class="nav-wrapper">
           <ul class="nav">
             <li class="nav__item active">
-              <a class="nav__link" href="/"><i class="fas fa-home"></i>Home</a>
+              <a class="nav__link" href="#home"
+                ><i class="fas fa-home"></i>Home</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/about"
+              <a class="nav__link" href="#about"
                 ><i class="fas fa-user"></i>About</a
               >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/portfolio"
+              <a class="nav__link" href="#portfolio"
                 ><i class="fas fa-image"></i>Portfolio</a
               >
             </li>
@@ -73,7 +75,7 @@
               >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/contact"
+              <a class="nav__link" href="#contact"
                 ><i class="fas fa-envelope"></i>Contact</a
               >
             </li>
@@ -85,7 +87,7 @@
 
     <!--================ Start Home Banner Section =================-->
     <canvas> </canvas>
-    <section class="hero_banner" id="test">
+    <section class="hero_banner" id="home">
       <div class="hero_banner_container">
         <div class="hero_banner__content">
           <h3>Hello!</h3>
@@ -103,16 +105,39 @@
     </section>
 
     <!--================ End Home Banner Section =================-->
-    <!-- ASIDE -->
-    <aside></aside>
-    <!-- SECTION -->
-    <section>
+
+    <!--================ Start About Section =================-->
+    <section class="about" id="about">
+      <h2><span>About</span> me</h2>
+      <div class="about__container">
+        <div class="about__img">
+          <img class="" src="./assets/images/about.png" alt="" />
+        </div>
+        <div class="about__content">
+          <h3>Let me introduce myself</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat,
+            quaerat inventore omnis sit nam unde sapiente, fuga voluptatum
+            quidem ex assumenda repellat cupiditate, tenetur qui quo tempora est
+            pariatur quisquam.
+          </p>
+          <div class="btns-wrapper">
+            <a class="btn btn-primary" href="#"><span>Download CV</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End About Section =================-->
+    <!--================ Start Portfolio Section =================-->
+    <!-- SECTION PORTFOLIO -->
+    <section id="portfolio">
       <a href=""><img src="" alt=""/></a> <a href=""><img src="" alt=""/></a>
       <a href=""><img src="" alt=""/></a>
     </section>
+    <!--================ End Portfolio Section =================-->
     <!-- FOOTER -->
 
-    <footer>
+    <footer id="contact">
       <div class="footer__container">
         <div class="contact">
           <h3>Contact</h3>
