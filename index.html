@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- TITLE -->
-    <title>Document</title>
+    <title>Mateusz Dominiak Junior Front-End Developer</title>
     <!-- SEO -->
     <meta name="description" content="Najlepiej do 150znakow" />
     <meta name="author" content="Mateusz Dominiak" />
@@ -21,6 +21,13 @@
     <link rel="icon" href="favicon.png" sizes="32x32" type="image/png" />
     <link rel="icon" href="favicon.png" sizes="64x64" type="image/png" />
     <link rel="icon" href="favicon.png" sizes="96x96" type="image/png" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <!-- FACEBOOK -->
     <!-- https://developers.facebook.com/docs/sharing/webmasters/ -->
     <meta property="og:url" content="http://example.com" />
@@ -31,12 +38,14 @@
   </head>
   <body>
     <!--================ Start Header Section =================-->
+
     <header class="header_section">
       <nav class="navbar container">
         <div class="logo">
           <img src="./assets/images/logo.svg" alt="My logo" />
         </div>
         <input type="checkbox" id="nav" class="hidden" />
+
         <label for="nav" class="nav-btn">
           <i></i>
           <i></i>
@@ -46,19 +55,27 @@
         <div class="nav-wrapper">
           <ul class="nav">
             <li class="nav__item active">
-              <a class="nav__link" href="/">Home</a>
+              <a class="nav__link" href="/"><i class="fas fa-home"></i>Home</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/about">About</a>
+              <a class="nav__link" href="/about"
+                ><i class="fas fa-user"></i>About</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/portfolio">Portfolio</a>
+              <a class="nav__link" href="/portfolio"
+                ><i class="fas fa-image"></i>Portfolio</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/blog">Blog</a>
+              <a class="nav__link" href="/blog"
+                ><i class="fas fa-pen"></i>Blog</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="/contact">Contact</a>
+              <a class="nav__link" href="/contact"
+                ><i class="fas fa-envelope"></i>Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -67,7 +84,8 @@
     <!--================ End Header Section =================-->
 
     <!--================ Start Home Banner Section =================-->
-    <section class="hero_banner">
+    <canvas> </canvas>
+    <section class="hero_banner" id="test">
       <div class="hero_banner_container">
         <div class="hero_banner__content">
           <h3>Hello!</h3>
@@ -83,6 +101,7 @@
         </div>
       </div>
     </section>
+
     <!--================ End Home Banner Section =================-->
     <!-- ASIDE -->
     <aside></aside>
@@ -92,15 +111,30 @@
       <a href=""><img src="" alt=""/></a>
     </section>
     <!-- FOOTER -->
+
     <footer>
-      <h3>Follow me on</h3>
-      <ul>
-        <li>YouTube</li>
-        <li>Linkedin</li>
-        <li>Tel</li>
-        <li>email: matteuszd@gmail.com</li>
-      </ul>
-      <p>&copy; Mateusz Dominak</p>
+      <div class="footer__container">
+        <div class="contact">
+          <h3>Contact</h3>
+          <ul>
+            <li><i class="fas fa-mobile-alt"></i>Tel: +48 695 655 650</li>
+            <li><i class="fas fa-envelope"></i>email: matteuszd@gmail.com</li>
+          </ul>
+        </div>
+        <div class="socials">
+          <h3>Social Media</h3>
+          <ul>
+            <li><i class="fab fa-github"></i>Github</li>
+            <li><i class="fab fa-linkedin"></i>Linkedin</li>
+            <li><i class="fab fa-youtube"></i>YouTube</li>
+            <li><i class="fab fa-facebook"></i>Facebook</li>
+          </ul>
+        </div>
+
+        <div class="created"><p>&copy; Mateusz Dominak</p></div>
+      </div>
     </footer>
+
+    <script src="./js/canvas.js"></script>
   </body>
 </html>

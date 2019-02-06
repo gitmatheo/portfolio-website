@@ -1,7 +1,7 @@
 @import "variables";
 // @import "mixins";
 @import "reset";
-
+@import "icons";
 @import "buttons";
 @import "header";
 @import "hero";
@@ -9,3 +9,21 @@
 @import "footer";
 
 // dasdas
+
+canvas {
+  z-index: -100;
+  opacity: 0.5;
+  position: absolute;
+}
+
+@media (max-width: 640px) {
+  canvas {
+    display: none;
+  }
+}
+
+body::after {
+  content: "";
+  display: block;
+  clear: both;
+}

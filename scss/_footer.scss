@@ -5,12 +5,45 @@ footer {
     #3a6073,
     #16222a
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  * {
+  .footer__container {
+    font-size: 1.3em;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    height: 80%;
+    width: 100%;
+    max-width: 1024px;
+    line-height: 150%;
+
+    div {
+      padding: 40px 0;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  footer {
+    .footer__container {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  footer {
+    .footer__container {
+      flex-direction: column;
+      padding: 20px 0;
+      font-size: 1.1em;
+      div {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+      }
+    }
   }
 }

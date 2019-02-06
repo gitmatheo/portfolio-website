@@ -38,3 +38,17 @@
     }
   }
 }
+
+@media (max-width: 360px) {
+  .btn {
+    border-radius: 5px;
+    padding: 10px 34px;
+    &.btn-primary {
+      color: white;
+      border: 1px solid transparent;
+    }
+    &.btn-secondary {
+      border: 1px solid $primary-color;
+    }
+  }
+}
