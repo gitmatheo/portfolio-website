@@ -83,16 +83,11 @@
     .about__container {
       flex-direction: column-reverse;
       align-items: center;
-      //   padding: 25px;
       .about__content {
         align-items: center;
-        // .btns-wrapper {
-        //   margin-top: 20px;
-        // }
       }
       .about__img {
         width: 68%;
-        // margin-top: 12%;
       }
     }
   }
@@ -103,9 +98,6 @@
     .about__container {
       font-size: 1em;
       .about__content {
-        // .btns-wrapper {
-        //   margin-top: 40px;
-        // }
         h3 {
           font-size: 1.8em;
         }
@@ -124,8 +116,3 @@
     }
   }
 }
-
-// #test {
-//   position: relative;
-//   // background: rgba(0, 0, 0, 0);
-// }

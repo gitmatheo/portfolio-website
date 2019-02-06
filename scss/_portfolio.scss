@@ -1,0 +1,118 @@
+// ABOUT SECTION
+
+.portfolio {
+  color: $title-color;
+  text-align: center;
+  h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: $font-XXL;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 200%;
+    margin: 20px auto;
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background: black;
+    }
+  }
+  .portfolio__container {
+    text-align: left;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card {
+      display: flex;
+      width: 30%;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3%;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.02),
+        10px 0 30px 0px rgba(0, 0, 0, 0.02),
+        -10px 0 30px 0px rgba(0, 0, 0, 0.02),
+        0 -10px 30px 0px rgba(0, 0, 0, 0.02);
+      margin: 1%;
+      .card__title {
+        font-weight: 900;
+        padding: 10px 0;
+        text-transform: uppercase;
+      }
+      .card__desc {
+        padding: 10px 0;
+      }
+      .card__img {
+        flex-basis: 40%;
+        text-align: right;
+        img {
+          width: 100%;
+          margin: 5px auto;
+        }
+      }
+      .btns-wrapper {
+        font-weight: 400;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        .btn {
+          width: 48%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .portfolio {
+    .portfolio__container {
+      .card {
+        .btns-wrapper {
+          .btn {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 960px) {
+  .portfolio {
+    .portfolio__container {
+      .card {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .portfolio {
+    .portfolio__container {
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .portfolio {
+    .portfolio__container {
+      font-size: 1em;
+      .card {
+        .btns-wrapper {
+          flex-direction: column;
+          .btn {
+            width: 100%;
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+  }
+}
