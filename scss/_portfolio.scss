@@ -6,7 +6,7 @@
   h2 {
     display: inline-block;
     text-align: center;
-    font-size: $font-XXL;
+    // font-size: $font-XXL;
     text-transform: uppercase;
     font-weight: 900;
     line-height: 200%;
@@ -37,7 +37,7 @@
         10px 0 30px 0px rgba(0, 0, 0, 0.02),
         -10px 0 30px 0px rgba(0, 0, 0, 0.02),
         0 -10px 30px 0px rgba(0, 0, 0, 0.02);
-      margin: 1%;
+
       .card__title {
         font-weight: 900;
         padding: 10px 0;
@@ -67,7 +67,7 @@
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: $xxxl) {
   .portfolio {
     .portfolio__container {
       .card {
@@ -80,7 +80,7 @@
     }
   }
 }
-@media (max-width: 960px) {
+@media (max-width: $xl) {
   .portfolio {
     .portfolio__container {
       .card {
@@ -90,7 +90,7 @@
   }
 }
 
-@media (max-width: 639px) {
+@media (max-width: $md) {
   .portfolio {
     .portfolio__container {
       .card {
@@ -100,16 +100,29 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: $xs) {
   .portfolio {
     .portfolio__container {
-      font-size: 1em;
       .card {
         .btns-wrapper {
           flex-direction: column;
           .btn {
             width: 100%;
             margin: 5px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $xxxl) {
+  .portfolio {
+    .portfolio__container {
+      .card {
+        .btns-wrapper {
+          .btn {
+            font-size: 16px;
           }
         }
       }

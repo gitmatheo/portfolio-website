@@ -1,21 +1,3 @@
-//header_area css
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: $primary-color;
-}
-
-body {
-  font-family: $primary-font;
-  font-weight: 200;
-}
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 // HEADER
 .header_section {
   width: 100%;
@@ -37,13 +19,15 @@ body {
       justify-content: center;
       font-weight: 400;
       .nav__link {
-        padding: 20px 0px 20px 40px;
+        padding: 20px 2vw;
         text-decoration: none;
         color: $title-color;
         transition: 0.3s;
         &:hover {
           color: $text-color;
-          width: 100%;
+        }
+        &:last-child {
+          padding-right: 0px;
         }
       }
       .nav__item {
@@ -57,7 +41,12 @@ body {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $md) {
+  .header_section {
+    .navbar {
+      padding: 20px 10px;
+    }
+  }
   .logo {
     padding: 0;
   }
@@ -101,15 +90,7 @@ body {
           transition-delay: 0.8s;
           border-bottom: none;
         }
-        &:not(:first-child) {
-          margin-left: 0;
-        }
         .nav__link {
-          padding: 10px 24px;
-          opacity: 0;
-          color: #000;
-          font-size: 14px;
-          letter-spacing: 1.2px;
           transform: translateX(-20px);
           transition: all 0.2s ease;
         }

@@ -1,12 +1,10 @@
 // ABOUT SECTION
-
 .about {
   color: $title-color;
   text-align: center;
   h2 {
     display: inline-block;
     text-align: center;
-    font-size: $font-XXL;
     text-transform: uppercase;
     font-weight: 900;
     line-height: 200%;
@@ -28,7 +26,6 @@
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    font-size: 1.5em;
     * {
       line-height: 150%;
       font-weight: 400;
@@ -56,29 +53,7 @@
   }
 }
 
-@media (max-width: 960px) {
-  .about {
-    .about__container {
-      font-size: 1.4em;
-    }
-  }
-}
-
-@media (max-width: 720px) {
-  .about {
-    .about__container {
-      font-size: 1.1em;
-      h3 {
-        font-size: 1.5em;
-      }
-      h5 {
-        font-size: 0.8em;
-      }
-    }
-  }
-}
-
-@media (max-width: 639px) {
+@media (max-width: $md) {
   .about {
     .about__container {
       flex-direction: column-reverse;
@@ -89,30 +64,6 @@
       .about__img {
         width: 68%;
       }
-    }
-  }
-}
-
-@media (max-width: 360px) {
-  .about {
-    .about__container {
-      font-size: 1em;
-      .about__content {
-        h3 {
-          font-size: 1.8em;
-        }
-        h5 {
-          font-size: 0.8em;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .about {
-    .about__container {
-      font-size: 0.9em;
     }
   }
 }

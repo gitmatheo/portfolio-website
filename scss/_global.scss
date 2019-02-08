@@ -1,0 +1,85 @@
+h1 {
+  font-size: ($font-size-base * 2.25);
+}
+
+h2 {
+  font-size: ($font-size-base * 1.875);
+}
+h3 {
+  font-size: ($font-size-base * 1.625);
+}
+h4 {
+  font-size: ($font-size-base * 1.375);
+}
+h5 {
+  font-size: ($font-size-base * 1.25);
+}
+h6 {
+  font-size: $font-size-base;
+}
+
+p,
+a,
+i,
+li {
+  font-size: $font-size-base;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: calc(1vw * 1.2);
+  font-family: $primary-font;
+  font-weight: 200;
+}
+
+@media (max-width: $xxxl) {
+  html {
+    font-size: calc(1vw * 1.4);
+  }
+}
+
+@media (max-width: $xxl) {
+  html {
+    font-size: calc(1vw * 1.6);
+  }
+}
+@media (max-width: $xl) {
+  html {
+    font-size: calc(1vw * 1.7);
+  }
+}
+@media (max-width: $lg) {
+  html {
+    font-size: calc(1vw * 1.9);
+  }
+}
+
+@media (max-width: $md) {
+  html {
+    font-size: calc(1vw * 2.4);
+  }
+}
+
+@media (max-width: $sm) {
+  html {
+    font-size: calc(1vw * 3);
+  }
+}
+
+@media (max-width: $xs) {
+  html {
+    font-size: calc(1vw * 3);
+  }
+}

@@ -5,13 +5,28 @@
 $primary-font: "Montserrat", sans-serif;
 $title-font: "Rubik", sans-serif;
 
-$font-XXL: 2.5rem;
-$font-big: 1.8rem;
-$font-md: 1.5rem;
-$font-sm: 1.3rem;
-
 /*COLOR VARIABLES*/
 $primary-color: #4458dc;
 $primary-color2: #854fee;
 $title-color: #000000;
 $text-color: #777777;
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$xx-small: ($font-size-base * 0.625); // 10px
+$x-small: ($font-size-base * 0.75); // 12px
+$small: ($font-size-base * 0.87); // 14px
+$medium: $font-size-base; // 16px
+$large: ($font-size-base * 1.25); // 20px
+$x-large: ($font-size-base * 1.5); // 24px
+$xx-large: ($font-size-base * 1.75); // 28px
+$xxx-large: ($font-size-base * 2); // 32px
+$xxxx-large: ($font-size-base * 2.25); // 36px
+
+//GRID BREAKPOINTS
+$xs: 320px;
+$sm: 480px;
+$md: 640px;
+$lg: 768px;
+$xl: 960px;
+$xxl: 1200px;
+$xxxl: 1440px;

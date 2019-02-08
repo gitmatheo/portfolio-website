@@ -1,13 +1,13 @@
 @import "variables";
 // @import "mixins";
 @import "reset";
+@import "global";
 @import "icons";
 @import "buttons";
 @import "header";
 @import "hero";
 @import "about";
 @import "portfolio";
-
 @import "footer";
 
 // dasdas
@@ -22,10 +22,4 @@ canvas {
   canvas {
     display: none;
   }
-}
-
-body::after {
-  content: "";
-  display: block;
-  clear: both;
 }
